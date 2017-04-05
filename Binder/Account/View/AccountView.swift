@@ -1,14 +1,14 @@
 //
-//  SecondViewController.swift
+//  AccountView.swift
 //  Binder
 //
-//  Created by iem on 29/03/2017.
+//  Created by axellebot on 05/04/2017.
 //  Copyright © 2017 iem. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AccountView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
