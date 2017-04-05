@@ -1,3 +1,14 @@
-PODFILE CHECKSUM: 4d4069302bb797ee533238b3b463daf129f8af87
+PODS:
+  - Material (2.5.2):
+    - Material/Core (= 2.5.2)
+  - Material/Core (2.5.2)
+
+DEPENDENCIES:
+  - Material (= 2.5.2)
+
+SPEC CHECKSUMS:
+  Material: 00ae261fa04dd3f3f8584d07e44ac658fa1bc6fd
+
+PODFILE CHECKSUM: bfcdbe4f0568ce3bcc77ac760ff661f4d13c41c5
 
 COCOAPODS: 1.1.1

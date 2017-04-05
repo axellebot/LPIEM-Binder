@@ -6,6 +6,8 @@ target 'Binder' do
   use_frameworks!
 
   # Pods for Binder
+  pod 'Material', '2.5.2'
+
 
   target 'BinderTests' do
     inherit! :search_paths
