@@ -9,6 +9,7 @@ target 'Binder' do
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'Firebase/Database'
+  pod 'ObjectMapper', '~> 2.2'
 
   target 'BinderTests' do
     inherit! :search_paths
