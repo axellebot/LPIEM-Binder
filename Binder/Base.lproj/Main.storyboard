@@ -253,7 +253,7 @@
         <!--Checkout-->
         <scene sceneID="Buh-BI-NIv">
             <objects>
-                <viewController title="Checkout" id="tdj-qz-gox" userLabel="Checkout" sceneMemberID="viewController">
+                <viewController title="Checkout" hidesBottomBarWhenPushed="YES" id="tdj-qz-gox" userLabel="Checkout" customClass="CheckoutView" customModule="Binder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7a2-lB-e3K"/>
                         <viewControllerLayoutGuide type="bottom" id="I2q-iD-f7F"/>
@@ -262,6 +262,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_payment_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="fIz-e7-VCt">
+                                <rect key="frame" x="0.0" y="72" width="375" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Gqg-Bi-5xi"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d06-xt-go5" userLabel="Card">
                                 <rect key="frame" x="16" y="253.5" width="343" height="160"/>
                                 <subviews>
@@ -318,26 +324,20 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4O-J3-n9P">
-                                <rect key="frame" x="159.5" y="580" width="55" height="30"/>
+                                <rect key="frame" x="160" y="621" width="55" height="30"/>
                                 <state key="normal" title="Validate"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_payment_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="fIz-e7-VCt">
-                                <rect key="frame" x="0.0" y="72" width="375" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Gqg-Bi-5xi"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="p4O-J3-n9P" firstAttribute="centerX" secondItem="pDX-Nk-3kW" secondAttribute="centerX" id="3CK-vZ-wh3"/>
-                            <constraint firstItem="I2q-iD-f7F" firstAttribute="top" secondItem="p4O-J3-n9P" secondAttribute="bottom" constant="8" id="B1q-N5-Vrc"/>
                             <constraint firstItem="fIz-e7-VCt" firstAttribute="centerX" secondItem="pDX-Nk-3kW" secondAttribute="centerX" id="Y9F-wh-Q5n"/>
                             <constraint firstItem="fIz-e7-VCt" firstAttribute="top" secondItem="7a2-lB-e3K" secondAttribute="bottom" constant="8" id="fYW-Oq-Nvk"/>
                             <constraint firstItem="d06-xt-go5" firstAttribute="centerY" secondItem="pDX-Nk-3kW" secondAttribute="centerY" id="hLr-MO-Buz"/>
                             <constraint firstItem="d06-xt-go5" firstAttribute="leading" secondItem="pDX-Nk-3kW" secondAttribute="leadingMargin" id="pk0-1g-fKl"/>
                             <constraint firstItem="d06-xt-go5" firstAttribute="centerX" secondItem="fIz-e7-VCt" secondAttribute="centerX" id="xad-EJ-qNM"/>
                             <constraint firstItem="fIz-e7-VCt" firstAttribute="width" secondItem="pDX-Nk-3kW" secondAttribute="width" id="ye8-mN-g0e"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="p4O-J3-n9P" secondAttribute="bottom" constant="16" id="yzo-n6-tCz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Checkout" id="H9f-tq-P7V"/>
