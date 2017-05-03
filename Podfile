@@ -12,6 +12,7 @@ target 'Binder' do
   pod 'Firebase/Auth'
   pod 'ObjectMapper', '~> 2.2'
   pod 'GoogleSignIn'
+  pod 'Stripe'
 
   target 'BinderTests' do
     inherit! :search_paths
