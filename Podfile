@@ -6,6 +6,7 @@ target 'Binder' do
   use_frameworks!
 
   # Pods for Binder
+  pod 'Stripe'
 
 
   target 'BinderTests' do
