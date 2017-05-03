@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33C555B26360860D9B742252 /* Pods_BinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5934EBCA83B122B2EF1836D /* Pods_BinderUITests.framework */; };
 		7129EF22B51B75C45D0DEEC9 /* Pods_Binder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CEDD70FB90D68049018B27 /* Pods_Binder.framework */; };
+		93A7EF071EB9DA1D006000A4 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7EF061EB9DA1D006000A4 /* CheckoutView.swift */; };
 		9E6980895E871B1863014437 /* Pods_BinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8969FC3A23386957078EC0 /* Pods_BinderTests.framework */; };
 		B8502D2B1E8BEA940035AE5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8502D2A1E8BEA940035AE5F /* AppDelegate.swift */; };
 		B8502D321E8BEA940035AE5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8502D301E8BEA940035AE5F /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		51104AB8C1190E4E82050576 /* Pods-BinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BinderTests/Pods-BinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		671E1407364A5030803326EF /* Pods-BinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BinderUITests/Pods-BinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73AA65BEABDB5C6E9C1A1B8F /* Pods-Binder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binder/Pods-Binder.release.xcconfig"; sourceTree = "<group>"; };
+		93A7EF061EB9DA1D006000A4 /* CheckoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckoutView.swift; path = Checkout/View/CheckoutView.swift; sourceTree = "<group>"; };
 		9478113550AB045E3B22D7AD /* Pods-BinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BinderUITests/Pods-BinderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8CEDD70FB90D68049018B27 /* Pods_Binder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B447EA88FB961EA3DCE7BE53 /* Pods-Binder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binder/Pods-Binder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,22 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		93A7EF041EB9D9D8006000A4 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				93A7EF051EB9D9EA006000A4 /* View */,
+			);
+			name = Checkout;
+			sourceTree = "<group>";
+		};
+		93A7EF051EB9D9EA006000A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93A7EF061EB9DA1D006000A4 /* CheckoutView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		B8502D1E1E8BEA920035AE5F = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				7CBD249ACB47A15B4ECE2D65 /* Account */,
+				93A7EF041EB9D9D8006000A4 /* Checkout */,
 				7CBD23F6846A243A18F76311 /* Home */,
 				7CBD2077A0C6914BD6A38BB1 /* Messages */,
 				7CBD2FB0CD5EDEC8030A39F5 /* Settings */,
@@ -523,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8502D2B1E8BEA940035AE5F /* AppDelegate.swift in Sources */,
+				93A7EF071EB9DA1D006000A4 /* CheckoutView.swift in Sources */,
 				EC96E1A31E953D5400E2AD1D /* HomeView.swift in Sources */,
 				EC96E19F1E953D3700E2AD1D /* SettingsView.swift in Sources */,
 				EC96E1A11E953D4800E2AD1D /* MessagesView.swift in Sources */,
