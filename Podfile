@@ -6,7 +6,9 @@ target 'Binder' do
   use_frameworks!
 
   # Pods for Binder
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Database'
 
   target 'BinderTests' do
     inherit! :search_paths
