@@ -16,6 +16,16 @@
 		B8502D371E8BEA940035AE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8502D351E8BEA940035AE5F /* LaunchScreen.storyboard */; };
 		B8502D421E8BEA940035AE5F /* BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8502D411E8BEA940035AE5F /* BinderTests.swift */; };
 		B8502D4D1E8BEA940035AE5F /* BinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8502D4C1E8BEA940035AE5F /* BinderUITests.swift */; };
+		B8E9AD651EB9BD01009CBBFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8E9AD641EB9BD01009CBBFA /* GoogleService-Info.plist */; };
+		B8E9AD691EB9C3AA009CBBFA /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD681EB9C3AA009CBBFA /* FirebaseManager.swift */; };
+		B8E9AD6B1EB9CC2F009CBBFA /* FirebaseManager+FIRMessagingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD6A1EB9CC2F009CBBFA /* FirebaseManager+FIRMessagingDelegate.swift */; };
+		B8E9AD6D1EB9CC87009CBBFA /* FirebaseManager+UNUserNoyificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD6C1EB9CC87009CBBFA /* FirebaseManager+UNUserNoyificationCenterDelegate.swift */; };
+		B8E9AD711EB9E19D009CBBFA /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD701EB9E19D009CBBFA /* BaseModel.swift */; };
+		B8E9AD731EB9E2B4009CBBFA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD721EB9E2B4009CBBFA /* User.swift */; };
+		B8E9AD781EBA019A009CBBFA /* FirebaseManager+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD771EBA019A009CBBFA /* FirebaseManager+Notification.swift */; };
+		B8E9AD7A1EBA1B1B009CBBFA /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD791EBA1B1B009CBBFA /* Appointment.swift */; };
+		B8E9AD7C1EBA1F34009CBBFA /* Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD7B1EBA1F34009CBBFA /* Bind.swift */; };
+		B8E9AD7E1EBA215F009CBBFA /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9AD7D1EBA215F009CBBFA /* Conversation.swift */; };
 		EC96E19F1E953D3700E2AD1D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E19E1E953D3600E2AD1D /* SettingsView.swift */; };
 		EC96E1A11E953D4800E2AD1D /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E1A01E953D4800E2AD1D /* MessagesView.swift */; };
 		EC96E1A31E953D5400E2AD1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E1A21E953D5400E2AD1D /* HomeView.swift */; };
@@ -59,6 +69,17 @@
 		B8502D481E8BEA940035AE5F /* BinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8502D4C1E8BEA940035AE5F /* BinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderUITests.swift; sourceTree = "<group>"; };
 		B8502D4E1E8BEA940035AE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E9AD641EB9BD01009CBBFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8E9AD661EB9C24A009CBBFA /* Binder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Binder.entitlements; sourceTree = "<group>"; };
+		B8E9AD681EB9C3AA009CBBFA /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		B8E9AD6A1EB9CC2F009CBBFA /* FirebaseManager+FIRMessagingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseManager+FIRMessagingDelegate.swift"; sourceTree = "<group>"; };
+		B8E9AD6C1EB9CC87009CBBFA /* FirebaseManager+UNUserNoyificationCenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseManager+UNUserNoyificationCenterDelegate.swift"; sourceTree = "<group>"; };
+		B8E9AD701EB9E19D009CBBFA /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B8E9AD721EB9E2B4009CBBFA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B8E9AD771EBA019A009CBBFA /* FirebaseManager+Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseManager+Notification.swift"; sourceTree = "<group>"; };
+		B8E9AD791EBA1B1B009CBBFA /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		B8E9AD7B1EBA1F34009CBBFA /* Bind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bind.swift; sourceTree = "<group>"; };
+		B8E9AD7D1EBA215F009CBBFA /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		C5934EBCA83B122B2EF1836D /* Pods_BinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC96E19E1E953D3600E2AD1D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EC96E1A01E953D4800E2AD1D /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -207,6 +228,8 @@
 		B8502D291E8BEA940035AE5F /* Binder */ = {
 			isa = PBXGroup;
 			children = (
+				B8E9AD6E1EB9E0FD009CBBFA /* storage */,
+				B8E9AD661EB9C24A009CBBFA /* Binder.entitlements */,
 				7CBD249ACB47A15B4ECE2D65 /* Account */,
 				7CBD23F6846A243A18F76311 /* Home */,
 				7CBD2077A0C6914BD6A38BB1 /* Messages */,
@@ -216,6 +239,7 @@
 				B8502D381E8BEA940035AE5F /* Info.plist */,
 				B8502D351E8BEA940035AE5F /* LaunchScreen.storyboard */,
 				B8502D301E8BEA940035AE5F /* Main.storyboard */,
+				B8E9AD641EB9BD01009CBBFA /* GoogleService-Info.plist */,
 			);
 			path = Binder;
 			sourceTree = "<group>";
@@ -236,6 +260,38 @@
 				B8502D4E1E8BEA940035AE5F /* Info.plist */,
 			);
 			path = BinderUITests;
+			sourceTree = "<group>";
+		};
+		B8E9AD671EB9C390009CBBFA /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				B8E9AD681EB9C3AA009CBBFA /* FirebaseManager.swift */,
+				B8E9AD6A1EB9CC2F009CBBFA /* FirebaseManager+FIRMessagingDelegate.swift */,
+				B8E9AD6C1EB9CC87009CBBFA /* FirebaseManager+UNUserNoyificationCenterDelegate.swift */,
+				B8E9AD771EBA019A009CBBFA /* FirebaseManager+Notification.swift */,
+			);
+			name = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		B8E9AD6E1EB9E0FD009CBBFA /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				B8E9AD6F1EB9E143009CBBFA /* model */,
+				B8E9AD671EB9C390009CBBFA /* FirebaseManager */,
+			);
+			name = storage;
+			sourceTree = "<group>";
+		};
+		B8E9AD6F1EB9E143009CBBFA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B8E9AD701EB9E19D009CBBFA /* BaseModel.swift */,
+				B8E9AD721EB9E2B4009CBBFA /* User.swift */,
+				B8E9AD791EBA1B1B009CBBFA /* Appointment.swift */,
+				B8E9AD7B1EBA1F34009CBBFA /* Bind.swift */,
+				B8E9AD7D1EBA215F009CBBFA /* Conversation.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +373,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = C546876H5V;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					B8502D3C1E8BEA940035AE5F = {
 						CreatedOnToolsVersion = 8.0;
@@ -358,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8502D371E8BEA940035AE5F /* LaunchScreen.storyboard in Resources */,
+				B8E9AD651EB9BD01009CBBFA /* GoogleService-Info.plist in Resources */,
 				B8502D341E8BEA940035AE5F /* Assets.xcassets in Resources */,
 				B8502D321E8BEA940035AE5F /* Main.storyboard in Resources */,
 			);
@@ -522,11 +584,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E9AD781EBA019A009CBBFA /* FirebaseManager+Notification.swift in Sources */,
+				B8E9AD691EB9C3AA009CBBFA /* FirebaseManager.swift in Sources */,
 				B8502D2B1E8BEA940035AE5F /* AppDelegate.swift in Sources */,
+				B8E9AD6D1EB9CC87009CBBFA /* FirebaseManager+UNUserNoyificationCenterDelegate.swift in Sources */,
+				B8E9AD7E1EBA215F009CBBFA /* Conversation.swift in Sources */,
 				EC96E1A31E953D5400E2AD1D /* HomeView.swift in Sources */,
 				EC96E19F1E953D3700E2AD1D /* SettingsView.swift in Sources */,
 				EC96E1A11E953D4800E2AD1D /* MessagesView.swift in Sources */,
+				B8E9AD6B1EB9CC2F009CBBFA /* FirebaseManager+FIRMessagingDelegate.swift in Sources */,
+				B8E9AD7C1EBA1F34009CBBFA /* Bind.swift in Sources */,
+				B8E9AD711EB9E19D009CBBFA /* BaseModel.swift in Sources */,
+				B8E9AD731EB9E2B4009CBBFA /* User.swift in Sources */,
 				EC96E1A51E953D6000E2AD1D /* AccountView.swift in Sources */,
+				B8E9AD7A1EBA1B1B009CBBFA /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +753,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Binder/Binder.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C546876H5V;
 				INFOPLIST_FILE = Binder/Info.plist;
@@ -700,6 +772,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Binder/Binder.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C546876H5V;
 				INFOPLIST_FILE = Binder/Info.plist;
