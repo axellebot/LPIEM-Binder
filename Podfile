@@ -9,6 +9,10 @@ target 'Binder' do
   # Pods for Binder
   pod 'JSQMessagesViewController','~> 7.3'
   pod 'R.swift','~> 3.2'
+  pod 'Firebase'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+
 end
 
 post_install do |installer|

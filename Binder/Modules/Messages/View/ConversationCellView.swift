@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ConversationItem : UITableViewCell {
+class ConversationCellView : UITableViewCell {
     var label :String?
 }

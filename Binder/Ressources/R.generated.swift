@@ -21,8 +21,17 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 0 files.
+  /// This `R.file` struct is generated, and contains static references to 1 files.
   struct file {
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
+    
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   
@@ -73,13 +82,28 @@ struct R: Rswift.Validatable {
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `conversationCell`.
-    static let conversationCell: Rswift.ReuseIdentifier<ConversationItem> = Rswift.ReuseIdentifier(identifier: "conversationCell")
+    static let conversationCell: Rswift.ReuseIdentifier<ConversationCellView> = Rswift.ReuseIdentifier(identifier: "conversationCell")
     
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 0 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
   struct segue {
+    /// This struct is generated for `ConversationsView`, and contains static references to 1 segues.
+    struct conversationsView {
+      /// Segue identifier `ShowConversation`.
+      static let showConversation: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, ConversationsView, ChatViewController> = Rswift.StoryboardSegueIdentifier(identifier: "ShowConversation")
+      
+      /// Optionally returns a typed version of segue `ShowConversation`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func showConversation(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, ConversationsView, ChatViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.conversationsView.showConversation, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

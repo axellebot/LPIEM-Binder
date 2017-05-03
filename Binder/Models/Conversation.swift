@@ -9,11 +9,9 @@
 import Foundation
 
 class Conversation: NSObject {
-    var id: String?
-    var label: String?
+    var id: String!
 
-    init(id: String, label: String) {
+    init(id: String) {
         self.id = id;
-        self.label = label;
     }
 }

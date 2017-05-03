@@ -204,6 +204,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>ECD6C7691EBA1BBF005B25BF</string>
 				<string>ECD6C7651EBA0754005B25BF</string>
 				<string>EC96E1A01E953D4800E2AD1D</string>
 			</array>
@@ -345,6 +346,7 @@ fi
 				<string>ECD6C7661EBA0754005B25BF</string>
 				<string>B8502D2B1E8BEA940035AE5F</string>
 				<string>EC96E1A31E953D5400E2AD1D</string>
+				<string>ECD6C76A1EBA1BBF005B25BF</string>
 				<string>ECD6C7681EBA091F005B25BF</string>
 				<string>EC96E19F1E953D3700E2AD1D</string>
 				<string>EC37F6C51EB9BF14002718B1</string>
@@ -376,6 +378,7 @@ fi
 			<key>files</key>
 			<array>
 				<string>B8502D371E8BEA940035AE5F</string>
+				<string>EC9E47E61EBA2EE7004DD7D0</string>
 				<string>B8502D341E8BEA940035AE5F</string>
 				<string>B8502D321E8BEA940035AE5F</string>
 			</array>
@@ -961,6 +964,26 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>EC9E47E51EBA2EE7004DD7D0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GoogleService-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC9E47E61EBA2EE7004DD7D0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC9E47E51EBA2EE7004DD7D0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>ECD6C7601EBA04F2005B25BF</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -998,6 +1021,7 @@ fi
 			<key>children</key>
 			<array>
 				<string>B8502D331E8BEA940035AE5F</string>
+				<string>EC9E47E51EBA2EE7004DD7D0</string>
 				<string>B8502D381E8BEA940035AE5F</string>
 				<string>B8502D351E8BEA940035AE5F</string>
 				<string>B8502D301E8BEA940035AE5F</string>
@@ -1048,7 +1072,7 @@ fi
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>path</key>
-			<string>ConversationItem.swift</string>
+			<string>ConversationCellView.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1076,6 +1100,26 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>ECD6C7671EBA091F005B25BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ECD6C7691EBA1BBF005B25BF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ChatViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ECD6C76A1EBA1BBF005B25BF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ECD6C7691EBA1BBF005B25BF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
