@@ -7,7 +7,7 @@ target 'Binder' do
 
   # Pods for Binder
   pod 'Stripe'
-
+  pod 'WARangeSlider'
 
   target 'BinderTests' do
     inherit! :search_paths
