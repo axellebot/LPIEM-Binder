@@ -13,6 +13,7 @@ target 'Binder' do
   pod 'ObjectMapper', '~> 2.2'
   pod 'GoogleSignIn'
   pod 'Stripe'
+  pod 'WARangeSlider'
 
   target 'BinderTests' do
     inherit! :search_paths

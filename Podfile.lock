@@ -57,6 +57,7 @@ PODS:
   - ObjectMapper (2.2.6)
   - Protobuf (3.3.0)
   - Stripe (10.1.0)
+  - WARangeSlider (1.1.1)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - ObjectMapper (~> 2.2)
   - Stripe
+  - WARangeSlider
 
 SPEC CHECKSUMS:
   Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
@@ -82,7 +84,8 @@ SPEC CHECKSUMS:
   ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
   Stripe: 1c7aa951a075cced500a919d92b687b35d410705
+  WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
 
-PODFILE CHECKSUM: 6973120ec46aca786e524a1ab90b955b89203719
+PODFILE CHECKSUM: 9614520f102e358101ea3b6fadca95c2493f61c0
 
 COCOAPODS: 1.1.1
