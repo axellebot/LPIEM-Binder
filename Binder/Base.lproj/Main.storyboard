@@ -501,7 +501,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ao1-tI-VWP" firstAttribute="top" secondItem="wwc-FH-TWE" secondAttribute="top" id="6tF-4Q-bZ0"/>
                             <constraint firstItem="bD4-yB-kaY" firstAttribute="top" secondItem="ao1-tI-VWP" secondAttribute="bottom" constant="-444" id="BTN-Xi-PzJ"/>
