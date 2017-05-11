@@ -25,7 +25,6 @@
 		B8ACF0851EC4AC3400005A2A /* FirebaseManager+FIRMessagingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF07C1EC4AC3400005A2A /* FirebaseManager+FIRMessagingDelegate.swift */; };
 		B8ACF0861EC4AC3400005A2A /* FirebaseManager+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF07D1EC4AC3400005A2A /* FirebaseManager+Notification.swift */; };
 		B8ACF0871EC4AC3400005A2A /* FirebaseManager+UNUserNoyificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF07E1EC4AC3400005A2A /* FirebaseManager+UNUserNoyificationCenterDelegate.swift */; };
-		B8ACF0881EC4AC3400005A2A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF07F1EC4AC3400005A2A /* FirstViewController.swift */; };
 		B8ACF0891EC4AC3400005A2A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF0801EC4AC3400005A2A /* Message.swift */; };
 		B8ACF08A1EC4AC3400005A2A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF0811EC4AC3400005A2A /* User.swift */; };
 		B8ACF08B1EC4AC3400005A2A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ACF0821EC4AC3400005A2A /* UserRepository.swift */; };
@@ -82,7 +81,6 @@
 		B8ACF07C1EC4AC3400005A2A /* FirebaseManager+FIRMessagingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseManager+FIRMessagingDelegate.swift"; sourceTree = "<group>"; };
 		B8ACF07D1EC4AC3400005A2A /* FirebaseManager+Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseManager+Notification.swift"; sourceTree = "<group>"; };
 		B8ACF07E1EC4AC3400005A2A /* FirebaseManager+UNUserNoyificationCenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseManager+UNUserNoyificationCenterDelegate.swift"; sourceTree = "<group>"; };
-		B8ACF07F1EC4AC3400005A2A /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B8ACF0801EC4AC3400005A2A /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B8ACF0811EC4AC3400005A2A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B8ACF0821EC4AC3400005A2A /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
@@ -280,20 +278,35 @@
 		B8ACF05D1EC4AAF900005A2A /* storage */ = {
 			isa = PBXGroup;
 			children = (
+				B8ACF08D1EC4B3F800005A2A /* FireBaseManager */,
+				B8ACF08C1EC4B3B700005A2A /* model */,
+				B8ACF0821EC4AC3400005A2A /* UserRepository.swift */,
+			);
+			name = storage;
+			sourceTree = "<group>";
+		};
+		B8ACF08C1EC4B3B700005A2A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B8ACF0761EC4AC1B00005A2A /* BaseModel.swift */,
 				B8ACF07A1EC4AC3400005A2A /* Conversation.swift */,
+				B8ACF0801EC4AC3400005A2A /* Message.swift */,
+				B8ACF0811EC4AC3400005A2A /* User.swift */,
+				B8ACF0771EC4AC1B00005A2A /* Bind.swift */,
+				B8ACF0741EC4AC0A00005A2A /* Appointment.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		B8ACF08D1EC4B3F800005A2A /* FireBaseManager */ = {
+			isa = PBXGroup;
+			children = (
 				B8ACF07B1EC4AC3400005A2A /* FirebaseManager.swift */,
 				B8ACF07C1EC4AC3400005A2A /* FirebaseManager+FIRMessagingDelegate.swift */,
 				B8ACF07D1EC4AC3400005A2A /* FirebaseManager+Notification.swift */,
 				B8ACF07E1EC4AC3400005A2A /* FirebaseManager+UNUserNoyificationCenterDelegate.swift */,
-				B8ACF07F1EC4AC3400005A2A /* FirstViewController.swift */,
-				B8ACF0801EC4AC3400005A2A /* Message.swift */,
-				B8ACF0811EC4AC3400005A2A /* User.swift */,
-				B8ACF0821EC4AC3400005A2A /* UserRepository.swift */,
-				B8ACF0761EC4AC1B00005A2A /* BaseModel.swift */,
-				B8ACF0771EC4AC1B00005A2A /* Bind.swift */,
-				B8ACF0741EC4AC0A00005A2A /* Appointment.swift */,
 			);
-			name = storage;
+			name = FireBaseManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,7 +594,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8ACF0881EC4AC3400005A2A /* FirstViewController.swift in Sources */,
 				B8502D2B1E8BEA940035AE5F /* AppDelegate.swift in Sources */,
 				B8ACF08B1EC4AC3400005A2A /* UserRepository.swift in Sources */,
 				EC96E1A31E953D5400E2AD1D /* HomeView.swift in Sources */,
