@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeView: UIViewController {
+    
+    var handle: FIRAuthStateDidChangeListenerHandle?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,18 @@ class HomeView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+    }
 }
 
