@@ -8,16 +8,32 @@
 
 import UIKit
 import Stripe
+import WARangeSlider
 
 class SettingsView: UIViewController {
+    
+    @IBOutlet weak var currentTokenAmountSlider: UISlider!
+    @IBOutlet weak var buyTokensAmountSlider: UISlider!
+    @IBOutlet weak var buyTokensAmountPriceLabel: UILabel!
+    @IBOutlet weak var rangeSliderViewContainer: UIView!
+    @IBOutlet weak var searchDistanceSlider: UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let frame : CGRect = CGRect(x: rangeSliderViewContainer.frame.minX,
+                                    y: rangeSliderViewContainer.frame.minY,
+                                    width: rangeSliderViewContainer.frame.width * 0.82,
+                                    height: rangeSliderViewContainer.frame.height * 0.1)
+        let rangeSlider : RangeSlider = RangeSlider(frame: frame)
+        self.view.addSubview(rangeSlider)
+        rangeSlider.addTarget(self, action: #selector(self.rangeSliderValueChanged(_:)),
+                              for: .valueChanged)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        displayStripeAddCardController()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +52,14 @@ class SettingsView: UIViewController {
     
     func chargeUser(token: STPToken, amount: Float) {
         
+    }
+    
+    func rangeSliderValueChanged(_ : Any) {
+        
+    }
+    
+    @IBAction func buyTokensAmountCheckoutButtonPressed(_ sender: Any) {
+        displayStripeAddCardController()
     }
     
 }

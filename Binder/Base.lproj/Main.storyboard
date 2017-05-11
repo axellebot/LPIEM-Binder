@@ -220,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="JAk-eM-Qng">
+                            <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="JAk-eM-Qng">
                                 <rect key="frame" x="14" y="101" width="347" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokens :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-b8-Ihs">
@@ -252,6 +252,9 @@
                                         <state key="normal" title="Checkout">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buyTokensAmountCheckoutButtonPressed:" destination="oMC-N5-qJw" eventType="touchUpInside" id="fEL-rp-Xby"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bo-Ho-HX1">
                                         <rect key="frame" x="191" y="80" width="48" height="40"/>
@@ -296,9 +299,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="65" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-zI-zOe">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="65" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-zI-zOe">
                                 <rect key="frame" x="14" y="415" width="347" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-0x-ktp">
                                 <rect key="frame" x="142.5" y="570" width="90" height="40"/>
@@ -315,20 +317,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zv4-zI-zOe" firstAttribute="leading" secondItem="lds-6A-5X6" secondAttribute="leadingMargin" id="0bt-0u-hev"/>
                             <constraint firstItem="G2w-b8-Ihs" firstAttribute="leading" secondItem="lds-6A-5X6" secondAttribute="leadingMargin" id="23b-Za-7za"/>
                             <constraint firstItem="Pji-fk-G6G" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="2gO-QX-meC"/>
                             <constraint firstItem="MVk-n5-COQ" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="3FY-2x-5eI"/>
                             <constraint firstItem="G2w-b8-Ihs" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="48g-ns-vZW"/>
                             <constraint firstItem="8sw-0x-ktp" firstAttribute="centerX" secondItem="lds-6A-5X6" secondAttribute="centerX" id="5be-t1-O3u"/>
+                            <constraint firstItem="zv4-zI-zOe" firstAttribute="top" secondItem="MVk-n5-COQ" secondAttribute="bottom" constant="8" id="KQc-zR-cIt"/>
                             <constraint firstItem="rgb-vs-eW6" firstAttribute="leading" secondItem="lds-6A-5X6" secondAttribute="leadingMargin" id="Mw0-ct-XTB"/>
                             <constraint firstItem="Pji-fk-G6G" firstAttribute="top" secondItem="rgb-vs-eW6" secondAttribute="bottom" constant="8" id="RSf-6U-Og9"/>
                             <constraint firstItem="JAk-eM-Qng" firstAttribute="top" secondItem="G2w-b8-Ihs" secondAttribute="bottom" constant="8" id="SEh-jl-1Fa"/>
+                            <constraint firstItem="zv4-zI-zOe" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="UtB-uv-gJj"/>
                             <constraint firstItem="rgb-vs-eW6" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="V1P-2R-hu5"/>
                             <constraint firstItem="MVk-n5-COQ" firstAttribute="leading" secondItem="lds-6A-5X6" secondAttribute="leadingMargin" id="Vvi-3b-eUF"/>
                             <constraint firstItem="IyG-Mh-gAr" firstAttribute="leading" secondItem="lds-6A-5X6" secondAttribute="leadingMargin" id="bqc-De-9JI"/>
                             <constraint firstItem="rgb-vs-eW6" firstAttribute="top" secondItem="IyG-Mh-gAr" secondAttribute="bottom" constant="16" id="cFd-gB-gyz"/>
                             <constraint firstItem="IyG-Mh-gAr" firstAttribute="top" secondItem="JAk-eM-Qng" secondAttribute="bottom" constant="28" id="cNN-x5-4vX"/>
+                            <constraint firstItem="Pji-fk-G6G" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="dQB-aP-Gh8"/>
                             <constraint firstItem="MVk-n5-COQ" firstAttribute="top" secondItem="Pji-fk-G6G" secondAttribute="bottom" constant="8" id="ftu-a4-Uxv"/>
+                            <constraint firstItem="Pji-fk-G6G" firstAttribute="leading" secondItem="lds-6A-5X6" secondAttribute="leadingMargin" id="oOQ-Z0-VFU"/>
                             <constraint firstItem="IyG-Mh-gAr" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="pbJ-gN-83F"/>
                             <constraint firstItem="JAk-eM-Qng" firstAttribute="trailing" secondItem="lds-6A-5X6" secondAttribute="trailingMargin" id="t2j-Gj-sbZ"/>
                             <constraint firstItem="zM9-qq-j13" firstAttribute="top" secondItem="8sw-0x-ktp" secondAttribute="bottom" constant="8" id="ui3-nG-xyk"/>
@@ -338,6 +345,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I9B-PQ-twk"/>
+                    <connections>
+                        <outlet property="buyTokensAmountPriceLabel" destination="5Bo-Ho-HX1" id="P9L-aK-2qH"/>
+                        <outlet property="buyTokensAmountSlider" destination="GMF-se-B4e" id="5PY-7J-aIR"/>
+                        <outlet property="currentTokenAmountSlider" destination="JAk-eM-Qng" id="cxk-vo-mrp"/>
+                        <outlet property="rangeSliderViewContainer" destination="Pji-fk-G6G" id="5Jl-km-dCv"/>
+                        <outlet property="searchDistanceSlider" destination="zv4-zI-zOe" id="2DP-GI-CZW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCm-XX-D1B" sceneMemberID="firstResponder"/>
             </objects>
