@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class User: Mappable {
+class User: BaseModel {
     
     enum Gender: String {
         case man = "gender1"

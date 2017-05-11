@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Message {
+class Message: BaseModel {
     var _content: String?
     var _timestamp: String?
     var _userId: String?

@@ -8,7 +8,8 @@
 
 import Foundation
 import Firebase
+import ObjectMapper
 
-protocol BaseModel {
+protocol BaseModel: Mappable {
     
 }

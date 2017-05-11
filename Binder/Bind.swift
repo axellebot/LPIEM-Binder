@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Bind {
+class Bind: BaseModel {
     var _conversationd: String?
     var _firstUser: User?
     var _secondUser: User?

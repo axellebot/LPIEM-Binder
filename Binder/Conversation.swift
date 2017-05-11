@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Conversation {
+class Conversation: BaseModel {
     var messages: [Message]?
     
     required init?(map: Map) {

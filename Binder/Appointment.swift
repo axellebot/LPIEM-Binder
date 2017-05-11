@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Appointments {
+class Appointments: BaseModel {
     var _bindId: String?
     var _description: String?
     var _location: Location?
