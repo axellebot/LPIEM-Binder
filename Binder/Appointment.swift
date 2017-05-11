@@ -20,7 +20,7 @@ class Appointments {
     }
     
     func mapping(map: Map) {
-        _bindID      <- map["bindId"]
+        _bindId      <- map["bindId"]
         _description <- map["description"]
         _location    <- map["location"]
         _timestamp   <- map["timestamp"]

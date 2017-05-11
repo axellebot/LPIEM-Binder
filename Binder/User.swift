@@ -22,6 +22,10 @@ class User: Mappable {
     var _sexe: Gender?
     var _pictureURL: String?
     
+    init(){
+        
+    }
+    
     required init?(map: Map) {
         
     }
