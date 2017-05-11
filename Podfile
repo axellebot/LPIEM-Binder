@@ -6,7 +6,9 @@ target 'Binder' do
   use_frameworks!
 
   # Pods for Binder
-
+  
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 
   target 'BinderTests' do
     inherit! :search_paths

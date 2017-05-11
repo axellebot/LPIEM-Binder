@@ -16,6 +16,8 @@
 		B8502D371E8BEA940035AE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8502D351E8BEA940035AE5F /* LaunchScreen.storyboard */; };
 		B8502D421E8BEA940035AE5F /* BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8502D411E8BEA940035AE5F /* BinderTests.swift */; };
 		B8502D4D1E8BEA940035AE5F /* BinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8502D4C1E8BEA940035AE5F /* BinderUITests.swift */; };
+		B8750B111EB9FC49003B8FE4 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8750B101EB9FC49003B8FE4 /* ConnectionView.swift */; };
+		B8CE05C81EC486020099D7CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE05C71EC486020099D7CC /* GoogleService-Info.plist */; };
 		EC96E19F1E953D3700E2AD1D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E19E1E953D3600E2AD1D /* SettingsView.swift */; };
 		EC96E1A11E953D4800E2AD1D /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E1A01E953D4800E2AD1D /* MessagesView.swift */; };
 		EC96E1A31E953D5400E2AD1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E1A21E953D5400E2AD1D /* HomeView.swift */; };
@@ -59,6 +61,8 @@
 		B8502D481E8BEA940035AE5F /* BinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8502D4C1E8BEA940035AE5F /* BinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderUITests.swift; sourceTree = "<group>"; };
 		B8502D4E1E8BEA940035AE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8750B101EB9FC49003B8FE4 /* ConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		B8CE05C71EC486020099D7CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5934EBCA83B122B2EF1836D /* Pods_BinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC96E19E1E953D3600E2AD1D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EC96E1A01E953D4800E2AD1D /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 		B8502D291E8BEA940035AE5F /* Binder */ = {
 			isa = PBXGroup;
 			children = (
+				B8CE05C71EC486020099D7CC /* GoogleService-Info.plist */,
+				B8750B0D1EB9FB15003B8FE4 /* Login */,
 				7CBD249ACB47A15B4ECE2D65 /* Account */,
 				7CBD23F6846A243A18F76311 /* Home */,
 				7CBD2077A0C6914BD6A38BB1 /* Messages */,
@@ -236,6 +242,14 @@
 				B8502D4E1E8BEA940035AE5F /* Info.plist */,
 			);
 			path = BinderUITests;
+			sourceTree = "<group>";
+		};
+		B8750B0D1EB9FB15003B8FE4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B8750B101EB9FC49003B8FE4 /* ConnectionView.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +329,7 @@
 				TargetAttributes = {
 					B8502D261E8BEA920035AE5F = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = C546876H5V;
+						DevelopmentTeam = T642JG97K3;
 						ProvisioningStyle = Automatic;
 					};
 					B8502D3C1E8BEA940035AE5F = {
@@ -358,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8502D371E8BEA940035AE5F /* LaunchScreen.storyboard in Resources */,
+				B8CE05C81EC486020099D7CC /* GoogleService-Info.plist in Resources */,
 				B8502D341E8BEA940035AE5F /* Assets.xcassets in Resources */,
 				B8502D321E8BEA940035AE5F /* Main.storyboard in Resources */,
 			);
@@ -407,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		33AB44032C5C33F643AA7DA2 /* [CP] Embed Pods Frameworks */ = {
@@ -467,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A5425EF6241628F7EE584539 /* [CP] Embed Pods Frameworks */ = {
@@ -512,7 +527,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -526,6 +541,7 @@
 				EC96E1A31E953D5400E2AD1D /* HomeView.swift in Sources */,
 				EC96E19F1E953D3700E2AD1D /* SettingsView.swift in Sources */,
 				EC96E1A11E953D4800E2AD1D /* MessagesView.swift in Sources */,
+				B8750B111EB9FC49003B8FE4 /* ConnectionView.swift in Sources */,
 				EC96E1A51E953D6000E2AD1D /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,7 +699,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = C546876H5V;
+				DEVELOPMENT_TEAM = T642JG97K3;
 				INFOPLIST_FILE = Binder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -701,7 +717,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = C546876H5V;
+				DEVELOPMENT_TEAM = T642JG97K3;
 				INFOPLIST_FILE = Binder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
