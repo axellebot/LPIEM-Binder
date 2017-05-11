@@ -1,29 +1,24 @@
 //
-//  SettingsView.swift
+//  File.swift
 //  Binder
 //
-//  Created by axellebot on 05/04/2017.
+//  Created by Axel Turlier on 03/05/2017.
 //  Copyright © 2017 iem. All rights reserved.
 //
 
 import UIKit
 
-class SettingsView: UIViewController {
-
+class CheckoutView: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.performSegue(withIdentifier: "settingsToCheckout", sender: self)
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 

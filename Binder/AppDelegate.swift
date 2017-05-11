@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
@@ -22,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         // Override point for customization after application launch.
+        FIRApp.configure()
+        FirebaseManager.sharedInstance.registerForRemoteNotification(application: application)
         return true
     }
     
