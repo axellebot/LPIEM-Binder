@@ -6,6 +6,8 @@ target 'Binder' do
   use_frameworks!
 
   # Pods for Binder
+  
+  pod 'GoogleSignIn'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'Firebase/Database'
