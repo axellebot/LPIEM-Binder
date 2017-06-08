@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         // Override point for customization after application launch.
         STPPaymentConfiguration.shared().publishableKey = "pk_test_duyer4UlMe33noGxo2jYayuY"
+        FIRApp.configure()
         return true
     }
     
