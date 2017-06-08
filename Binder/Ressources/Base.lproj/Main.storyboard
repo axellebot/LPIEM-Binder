@@ -213,9 +213,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="auP-ub-gI5">
-                        <barButtonItem key="backBarButtonItem" title="Dqzdzs" id="tp0-xU-sq0"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="auP-ub-gI5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBx-Ff-JlB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +225,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Zj-qH-sCL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messages" image="ic_message_white" id="uCP-x5-xKb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mKG-PS-gHR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mKG-PS-gHR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
