@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -171,7 +171,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="bYe-Dl-1Ma" kind="showDetail" identifier="ShowConversation" id="ZmG-Ru-sDd"/>
+                                            <segue destination="bYe-Dl-1Ma" kind="show" id="DTG-NZ-xAt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -201,7 +201,7 @@
         <!--Chat View Controller-->
         <scene sceneID="GfL-cs-2DI">
             <objects>
-                <viewController id="bYe-Dl-1Ma" customClass="ChatViewController" customModule="Binder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="bYe-Dl-1Ma" customClass="ChatViewController" customModule="Binder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ER-qv-Nsl"/>
                         <viewControllerLayoutGuide type="bottom" id="DCi-r7-15M"/>
@@ -211,10 +211,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="auP-ub-gI5">
+                        <barButtonItem key="backBarButtonItem" title="Dqzdzs" id="tp0-xU-sq0"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBx-Ff-JlB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="296"/>
+            <point key="canvasLocation" x="1670" y="297"/>
         </scene>
         <!--Messages-->
         <scene sceneID="NtD-Ya-PuT">

@@ -29,7 +29,8 @@ class ChatViewController: JSQMessagesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.senderId = FIRAuth.auth()?.currentUser?.uid
+        self.senderId = "testId"
+        self.senderDisplayName = "Me"
         // Do any additional setup after loading the view.
     }
 
@@ -82,6 +83,17 @@ class ChatViewController: JSQMessagesViewController {
         } else {
             return incomingBubbleImageView
         }
+    }
+    
+    // MARK : Sender Image :
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource! {
+        return nil
+    }
+    
+    // MARK : Tap Send Button :
+    override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+        addMessage(withId: senderId, name: senderDisplayName, text: text)
+        finishSendingMessage(animated: true)
     }
     
     // MARK: Message Bubble Colors

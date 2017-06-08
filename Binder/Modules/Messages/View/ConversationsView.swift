@@ -20,6 +20,10 @@ class ConversationsView: UIViewController,UITableViewDelegate,UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         observeConversations()
+        conversations.append(Conversation(id: "1"))
+        conversations.append(Conversation(id: "2"))
+        conversations.append(Conversation(id: "3"))
+        self.tableView.reloadData()
     }
     
     deinit {
@@ -30,11 +34,6 @@ class ConversationsView: UIViewController,UITableViewDelegate,UITableViewDataSou
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        conversations.append(Conversation(id: "1"))
-        conversations.append(Conversation(id: "2"))
-        conversations.append(Conversation(id: "3"))
-        self.tableView.reloadData()
     }
 
 
@@ -60,9 +59,9 @@ class ConversationsView: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let conversation = conversations[(indexPath as NSIndexPath).row]
-            self.performSegue(withIdentifier: "ShowConversation", sender: conversation)
+            tableView.deselectRow(at: indexPath, animated: true)
     }
+    
 
     // MARK: Firebase related methods
     private func observeConversations() {
